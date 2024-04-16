@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.w3-sidebar {width: 120px;background: #ff000086;}
+
+#main {margin-left: 0px}
+
+@media only screen and (max-width: 700px) {#main {margin-left: 0}}
+
+ul {
+  list-style-type: none;
+  margin: 2px 10px;
+  padding: 0;
+  overflow: auto;
+  background-color: #323233;
+  border-radius: 30px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 15px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #3c0000;
+}
+</style>
+<header style="display: flex; align-items: center; justify-content: space-between; position: fixed; width:100%; z-index:9; margin-top: 10px;" id="home">
+  <img class="logo" src="./assets/FLUTTERvERSE.png" width="7%">
+  <nav>
+    <!-- <label class="hamburger">
+      <input type="checkbox">
+      <svg viewBox="0 0 32 32">
+        <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+        <path class="line" d="M7 16 27 16"></path>
+      </svg>
+    </label> -->
+    <ul id="primary-navigation" class="primary-navigation flex">
+      <li class="Active"><a href="#home" onclick="smoothScroll('home')"><h4>Home</h4></a></li>
+      <li class="Active"><a href="#about" onclick="smoothScroll('about')"><h4>About</h4></a></li>
+      <li class="Active"><a href="https://flutterverse.wordpress.com/"><h4>Blog</h4></a></li>
+      <li class="Active"><a href="https://github.com/vikram-vikky2002"><h4>GitHub</h4></a></li>
+      <li class="Active"><a href="#works" onclick="smoothScroll('works')"><h4>Works</h4></a></li>
+      <li class="Active"><a href="#contact" onclick="smoothScroll('contact')"><h4>Contact</h4></a></li>
+    </ul>
+  </nav>
+</header>
+<body class="w3-black">
+
+
+<div class="w3-padding-large" id="main">
+
+  <header class="w3-container w3-padding-32 w3-center w3-black tracking-in-expand" style="margin-top: 5rem;">
+    <h1 class="w3-jumbo"><span class="hide-small"> Hi 👋,</span> I'm Vikram K R </h1>
+    <h3>Mobile App Developer</h3>
+    <img src="assets/background.jpg" alt="boy" class="w3-image" width="100%" height="1108">
+  </header>
+
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">About me</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>I'm currently navigating the exciting realm of B.Tech in Computer Science at NIT 
+      Puducherry. 🚀<br><br>💻<b>Tech Enthusiast:</b> Immersed in the world of mobile 
+      app development, I've honed my skills in Flutter, crafting 3-4 real-time apps that 
+      you can find live on the Play Store! 📲✨ 👨‍💻<b>Professional Journey: </b>Proudly 
+      wearing the hat of a Senior App Developer at AppsAiT, where every day is an opportunity 
+      to innovate and create. 🚀 🌐<b>Full Stack Explorer: </b>From concept to deployment, 
+      I'm hands-on in the entire app development life cycle. 🔄 📈<b>Contributing to Success: 
+      </b>Playing a key role at AppsAiT, I'm passionate about contributing to the company's 
+      growth and making a mark in the app development industry. 🌟
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <p class="w3-wide">Mobile App Development</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">Figma UI UX Designing</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-wide">GitHub version control</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-wide">Python Programming</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <br>
+    <div class="w3-row-padding" style="margin:0 -16px">
+    </div>
+
+    <h3 class="w3-padding-24 w3-text-light-grey">My Experience</h3>
+    <img src="./assets/AppsAit.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">App Developer</span> Team Leader at AppsAiT.</p>
+    <p>March 2023 - currently</p><br>
+
+    <img src="./assets/nitpy.png" alt="Avatar" class="w3-left w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">App Developer</span> Team Head at NIT PUDUCHERRY.</p>
+    <p>September 2023 - currently</p>
+
+    <h3 class="w3-padding-24 w3-text-light-grey">My Academics</h3>
+    <img src="./assets/nitpy.png" alt="Avatar" class="w3-left w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Btech - Computer Science Engineering</span>at NIT Puducherry.</p>
+    <p>currently</p><br>
+
+    <img src="./assets/Udemylogos.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Flutter Mobile App Development</span>at Udemy.</p>
+    <p>2023</p><br>
+
+    <img src="./assets/jnvLogo.png" alt="Avatar" class="w3-left w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Senior Secondary Education</span>at JNV YANAM.</p>
+    <p>2019</p>
+  </div>
+
+  <div class="w3-padding-64 w3-content" id="works">
+    <h2 class="w3-text-light-grey">My Works</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half card_box">
+        <img src="./assets/gyanith.png" alt="Avatar" class="w3-left w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-margin-right">Gyanith23</span><br><a 
+          href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green"> Live on Playstore</a></p>
+      </div>
+      <div class="w3-half card_box">
+        <img src="./assets/drumpad.png" alt="Avatar" class="w3-left w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-margin-right">DrumPad : Music Maker</span><br><a 
+          href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green"> Live on Playstore</a></p>
+      </div>
+      <div class="w3-half card_box">
+        <img src="./assets/resume.png" alt="Avatar" class="w3-left w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-margin-right">Resume Builder : PDF Maker</span><br><a 
+          href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green"> Live on Playstore</a></p>
+      </div>
+
+      <div class="w3-half card_box">
+        <img src="./assets/chitchat.png" alt="Avatar" class="w3-left w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-margin-right">Chit Chat</span><br> Real-time chatting app</p>
+      </div>
+      <div class="w3-half card_box">
+        <img src="./assets/expense.png" alt="Avatar" class="w3-left w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-margin-right">Expense Tracker</span><br> Track your daily</p>
+      </div>
+      <div class="w3-half card_box">
+        <img src="./assets/python.png" alt="Avatar" class="w3-left w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-margin-right">Code Summarizer</span><br> ML Model</p>
+      </div>
+      <div class="w3-half card_box">
+        <img src="./assets/python.png" alt="Avatar" class="w3-left w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-margin-right">Petrol Bunk Management Software</span><br> Python Software</p>
+      </div>
+
+    </div> -->
+
+  </div>
+  <!-- <div class="work_row"> -->
+    <!-- <div class="neu_box" ><center>
+      <img src="./assets/gyanith.png" alt="Avatar" class="w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-margin-right">Gyanith23</span><br>Andriod Live Application</p>
+        </center>
+    </div> -->
+    <!-- <div class="div2">
+      <p>
+        Petrol Pump Management System is a computer-based software solution that aims to simplify and 
+        automate the operations of a petrol pump. This project is developed using Python programming 
+        language and uses a graphical user interface (GUI) to facilitate the user's interaction with 
+        the system.
+      </p>
+      <center>
+      <a class="btn btn-google" href="#" title="Google Play">Google Play</a>
+    </center>
+    </div> -->
+    <!-- <div class="div3 neu_box"> </div>
+    <div class="div4 neu_box"> </div>
+    <div class="div5 neu_box"> </div>
+    <div class="div6 neu_box"> </div>
+    <div class="div7 neu_box"> </div>
+    <div class="div8 neu_box"> </div> -->
+  <!-- </div> -->
+</div>
+
+<!-- </div> -->
+  <div style="display: flex; flex-wrap: wrap;align-items: center;justify-content: center;">
+    <div class="card_flip">
+      <div class="card_front" style="margin-right:auto; margin-left:auto;">
+      <img src="./assets/gyanith.png" alt="Avatar" class="card_img">
+      <p class="card__description"><span class="w3-large card__title">Gyanith23</span><br>Andriod Live Application</p>
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg> -->
+      <div class="card__content">
+        <p class="card__title">Gyanith23</p>
+        <p class="card__description">Stay updated with all the latest happenings of Gyanith 23, the annual technical festival of 
+          National Institute of Technology, Puducherry.</p>
+          <a class="btn btn-google" href="https://play.google.com/store/apps/details?id=org.gyanith.gyanith23&hl=en_IN&gl=US" title="Google Play">Google Play</a>
+      </div></div>
+    </div>
+
+    <div class="card_flip">
+      <div class="card_front" style="margin-right:auto; margin-left:auto;">
+      <img src="./assets/drumpad.png" alt="Avatar" class="card_img">
+      <p class="card__description"><span class="w3-large card__title">Drum Pad : Beat Master</span><br>Andriod Live Application</p>
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg> -->
+      <div class="card__content">
+        <p class="card__title">Drum Pad : Beat Master</p>
+        <p class="card__description">Drum Pad Machine is a popular DJ beats music mixer. Create music with the DJ 
+          app in just a few clicks on your own.</p>
+          <a class="btn btn-google" href="https://play.google.com/store/apps/details?id=com.appsait.drums_pad" title="Google Play">Google Play</a>
+      </div></div>
+    </div>
+
+    <div class="card_flip">
+      <div class="card_front" style="margin-right:auto; margin-left:auto;">
+      <img src="./assets/resume.png" alt="Avatar" class="card_img">
+      <p class="card__description"><span class="w3-large card__title">Resume Builder : PDF Creator</span><br>Andriod Live Application</p>
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg> -->
+      <div class="card__content">
+        <p class="card__title">Resume Builder : PDF Creator</p>
+        <p class="card__description">Resume is first impression while job hunting. Resume PDF Maker app will help you to create, make, edit, 
+          share professional format resumes in pdf format quickly. </p>
+          <a class="btn btn-google" href="https://play.google.com/store/apps/details?id=com.appsait.resume_builder&hl=en_IN&gl=US" title="Google Play">Google Play</a>
+      </div></div>
+    </div>
+
+    <div class="card_flip">
+      <div class="card_front" style="margin-right:auto; margin-left:auto;">
+        <img src="./assets/chitchat.png" alt="Avatar" class="card_img">
+        <p class="card__description"><span class="w3-large card__title">Chit Chat</span><br>Real-time chatting Application</p>
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg> -->
+        <div class="card__content">
+          <p class="card__title">Chit Chat</p>
+          <p class="card__description">Chit – chat application system is a real time application used in effective communication between the sender 
+            and the receiver. The user can sign up or login to start a conversation between the users. </p>
+          <a href="#">
+            <button class="Btn" style="margin-right:auto; margin-left:auto;">
+              <img class="git_ico" src="./assets/github-mark-white.png" width="40px">
+              <span class="text">Github</span>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card_flip">
+      <div class="card_front" >
+        <img src="./assets/expense.png" alt="Avatar" class="card_img">
+        <p class="card__description"><span class="w3-large card__title">Expense Tracker</span><br>Real-time chatting Application</p>
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg> -->
+        <div class="card__content">
+          <p class="card__title">Expense Tracker</p>
+          <p class="card__description">Experience Tracker is a powerful and intuitive Android app designed to seamlessly 
+            capture, organize, and analyze your life's experiences. </p>
+          <a href="https://github.com/vikram-vikky2002/Expenses-Tracker-App.git">
+            <button class="Btn" style="margin-right:auto; margin-left:auto;">
+              <img class="git_ico" src="./assets/github-mark-white.png" width="40px">
+              <span class="text">Github</span>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card_flip">
+      <div class="card_front" >
+        <img src="./assets/python.png" alt="Avatar" class="card_img">
+        <p class="card__description"><span class="w3-large card__title">Code Summarizer</span><br>Machine Learning Model</p>
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg> -->
+        <div class="card__content">
+          <p class="card__title">Code Summarizer</p>
+          <p class="card__description">Code summarizer model which will help the developers to understand the purpose and 
+            functionality of different parts of the code. Automatically generated comments can serve as an initial draft 
+            for code documentation, making it easier to keep documentation up to date.</p>
+          <a href="#">
+            <button class="Btn" style="margin-right:auto; margin-left:auto;">
+              <img class="git_ico" src="./assets/github-mark-white.png" width="40px">
+              <span class="text">Github</span>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card_flip">
+      <div class="card_front" >
+        <img src="./assets/python.png" alt="Avatar" class="card_img">
+        <p class="card__description"><span class="w3-large card__title">Petrol Bunk Management Software</span><br>Python Software</p>
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg> -->
+        <div class="card__content">
+          <p class="card__title">Petrol Bunk Management Software</p>
+          <p class="card__description">Petrol Bunk Management System is a robust and user-friendly application developed 
+            using Python with a graphical user interface (GUI).</p>
+          <a href="https://github.com/vikram-vikky2002/PetrolPump-Management-Python.git">
+            <button class="Btn" style="margin-right:auto; margin-left:auto;">
+              <img class="git_ico" src="./assets/github-mark-white.png" width="40px">
+              <span class="text">Github</span>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Erode, Tamilnadu, India</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +91 8309365005</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: vikram.nitpy@gmail.com</p>
+    </div><br>
+    <p>Let's get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  </div>
+
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <p>Social Media</p>
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-github w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </footer>
+
+
+
+</body>
+
+<script>
+  function smoothScroll(targetId) {
+      var targetElement = document.getElementById(targetId);
+      if (targetElement) {
+          window.scrollTo({
+              top: targetElement.offsetTop,
+              behavior: 'smooth'
+          });
+      }
+  }
+</script>
+</html>
