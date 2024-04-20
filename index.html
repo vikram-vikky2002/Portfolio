@@ -40,6 +40,40 @@ li a {
 li a:hover {
   background-color: #3c0000;
 }
+
+/*
+  RESUME BUTTON
+*/
+
+  button {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    border: none;
+    background: none;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  button::before {
+    margin-left: auto;
+  }
+
+  button::after, button::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    transition: 0.5s;
+  }
+
+  button:hover::after, button:hover::before {
+    width: 100%;
+  }
+
+
+
 </style>
 <header style="display: flex; align-items: center; justify-content: space-between; position: fixed; width:100%; z-index:9; margin-top: 10px;" id="home">
   <img class="logo" src="./assets/FLUTTERvERSE.png" width="7%">
@@ -54,7 +88,7 @@ li a:hover {
     <ul id="primary-navigation" class="primary-navigation flex">
       <li class="Active"><a href="#home" onclick="smoothScroll('home')"><h4>Home</h4></a></li>
       <li class="Active"><a href="#about" onclick="smoothScroll('about')"><h4>About</h4></a></li>
-      <li class="Active"><a href="https://flutterverse.wordpress.com/"><h4>Blog</h4></a></li>
+      <li class="Active"><a href="./cv.html"><h4>Resume</h4></a></li>
       <li class="Active"><a href="https://github.com/vikram-vikky2002"><h4>GitHub</h4></a></li>
       <li class="Active"><a href="#works" onclick="smoothScroll('works')"><h4>Works</h4></a></li>
       <li class="Active"><a href="#contact" onclick="smoothScroll('contact')"><h4>Contact</h4></a></li>
@@ -85,6 +119,9 @@ li a:hover {
       </b>Playing a key role at AppsAiT, I'm passionate about contributing to the company's 
       growth and making a mark in the app development industry. 🌟
     </p>
+    <button>
+      <a href="./cv.html">View Resume</a>
+    </button>
     <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
     <p class="w3-wide">Mobile App Development</p>
     <div class="w3-white">
