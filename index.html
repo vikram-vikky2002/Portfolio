@@ -45,7 +45,7 @@ li a:hover {
   RESUME BUTTON
 */
 
-  button {
+  .resume {
     color: white;
     text-decoration: none;
     font-size: 20px;
@@ -55,11 +55,11 @@ li a:hover {
     font-family: 'Poppins', sans-serif;
   }
 
-  button::before {
+  .resume::before {
     margin-left: auto;
   }
 
-  button::after, button::before {
+  .resume::after, .resume::before {
     content: '';
     width: 0%;
     height: 2px;
@@ -68,7 +68,7 @@ li a:hover {
     transition: 0.5s;
   }
 
-  button:hover::after, button:hover::before {
+  .resume:hover::after, .resume:hover::before {
     width: 100%;
   }
 
@@ -119,7 +119,7 @@ li a:hover {
       </b>Playing a key role at AppsAiT, I'm passionate about contributing to the company's 
       growth and making a mark in the app development industry. 🌟
     </p>
-    <button>
+    <button class="resume">
       <a href="./cv.html">View Resume</a>
     </button>
     <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
@@ -307,7 +307,7 @@ li a:hover {
           <p class="card__title">Chit Chat</p>
           <p class="card__description">Chit – chat application system is a real time application used in effective communication between the sender 
             and the receiver. The user can sign up or login to start a conversation between the users. </p>
-          <a href="#">
+          <a href="https://github.com/vikram-vikky2002/ChitChat">
             <button class="Btn" style="margin-right:auto; margin-left:auto;">
               <img class="git_ico" src="./assets/github-mark-white.png" width="40px">
               <span class="text">Github</span>
