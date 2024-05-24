@@ -462,7 +462,7 @@ line-height: 1.4;
 }
 
 .notch {
-    width: 180px;
+    width: 155px;
     height: 30px;
     background: #1f1f1f;
     border-radius: 0 0 20px 20px;
@@ -691,7 +691,31 @@ line-height: 1.4;
     background: #ffffff86;
     /* height: 100%; */
     min-height: 60px;
-    margin-top: 530px;
+    margin-top: 532px;
     border-radius: 20px;
     width: 109%;
+}
+
+
+.noti {
+    position: relative;
+}
+
+.noti-time {
+    top: 10px;
+}
+
+.noti-img {
+    width: 304px;
+    margin-top: -65px;
+    margin-right: 31px;
+}
+
+.noti-time {
+    top: 49px;
+    margin-top: -599px;
+    margin-left: 49px;
+    font-size: 12px;
+    color :black;
+    font-family: 'myFirstFont';
 }

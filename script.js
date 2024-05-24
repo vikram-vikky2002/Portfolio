@@ -127,6 +127,9 @@ function showTime() {
     document.getElementById(
         "time-widget-min"
     ).innerHTML = min;
+    document.getElementById(
+        "noti-time"
+    ).innerHTML = currentTime;
 }
 
 showTime();
