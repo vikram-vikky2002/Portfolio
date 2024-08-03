@@ -76,7 +76,7 @@ li a:hover {
 
 </style>
 <header style="display: flex; align-items: center; justify-content: space-between; position: fixed; width:100%; z-index:9; margin-top: 10px;" id="home">
-  <img class="logo" src="./assets/FLUTTERvERSE.png" width="7%">
+  <img id="nav-logo" class="logo" src="./assets/FLUTTERvERSE.png" width="7%">
   <nav>
     <!-- <label class="hamburger">
       <input type="checkbox">
@@ -174,6 +174,10 @@ li a:hover {
 
 
   <div style="display: flex; flex-wrap: wrap;align-items: center;justify-content: center;">
+    <div style="align-items: center; margin-right:40px; margin-left:40px; margin-bottom:30px; margin-top: -30px; opacity:40%;align-content: space-around;display: flex;justify-content: flex-end;flex-wrap: wrap;flex-direction: column;align-items: center;">
+      <img src="./assets/tap.png" style="width: 70px; opacity: 90%;" alt="Tap Icon">
+      <h4>Tap of the app for more information about the project</h4>
+    </div>
     <div class="iphone-frame">
       <div class="screen">
           <div class="time-widget-hr" id="time-widget-hr">12:00</div>
@@ -182,6 +186,14 @@ li a:hover {
               <div class="app-icon" onclick="showAppDetails('app1')">
                   <img src="./assets/karaiKavalan.png" alt="App 1">
                   <span>Karai Kavalan</span>
+              </div>
+              <div class="app-icon" onclick="showAppDetails('app10')">
+                  <img src="./assets/WeatherApp.png" alt="App 10">
+                  <span>Weather App</span>
+              </div>
+              <div class="app-icon" onclick="showAppDetails('app11')">
+                  <img src="./assets/genix.png" alt="App 11">
+                  <span>Genix Auctions</span>
               </div>
               <div class="app-icon" onclick="showAppDetails('app2')">
                   <img src="./assets/gyanith24logo.png" alt="App 2">
@@ -223,7 +235,7 @@ li a:hover {
           </div> -->
           <div class="bottom-back">
             <div class="bottom-icons">
-                <div class="bottom-icon">
+                <div class="bottom-icon" onclick="showMyDetails()">
                     <img src="./newAssets/contacts.png" alt="Phone">
                 </div>
                 <div class="bottom-icon">
@@ -250,6 +262,7 @@ li a:hover {
                   <p id="app-description">App Description</p>
                   <a id="app-link" href="#" target="_blank">
                       <button id="live">Go to Play Store</button>
+                      <button id="git">GitHub Link</button>
                   </a>
               </div>
           </div>
@@ -408,17 +421,6 @@ li a:hover {
 
     <script src="./script.js"></script>
 
-    <!-- <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form> -->
   </div>
 
   <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">

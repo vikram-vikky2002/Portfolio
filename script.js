@@ -8,6 +8,20 @@ function showAppDetails(appId) {
             icon: './assets/karaiKavalan.png',
             live: true
         },
+        'app10' : {
+            name: 'Weather App',
+            description: 'This Flutter application fetches and displays current weather data and a 5-day weather forecast using the OpenWeatherMap API. It also stores the selected city locally so that the weather data can be displayed even when offline.',
+            link: 'https://github.com/vikram-vikky2002/Weather-App-Flutter.git',
+            icon: './assets/WeatherApp.png',
+            live: false
+        },
+        'app11' : {
+            name: 'Genix Auctions',
+            description: 'A fullstack website using MEFN (MongoDB, Express, Flutter, NodeJS).',
+            link: 'https://github.com/vikram-vikky2002/genix_auctions.git',
+            icon: './assets/genix.png',
+            live: false
+        },
         'app2': {
             name: 'Gyanith 24',
             description: 'GYANITH \'24, the annual Science and Technology of the National Institute of Technology Puducherry. Gyanith is a platform started in 2017 that paves the way for the student community to showcase their technical prowess.',
@@ -52,7 +66,7 @@ function showAppDetails(appId) {
         },
         'app8' : {
             name: 'Code Summarizer',
-            description: 'Code summarizer model which will help the developers to understand the purpose and functionality of different parts of the code. Automatically generated comments can serve as an initial draft for code documentation, making it easier to keep documentation up to date.',
+            description: 'Code summarizer model will help the developers to understand the purpose and functionality of different parts of the code and generates suitable comments for the same.',
             link: '',
             icon: './assets/python.png',
             live: false
@@ -75,8 +89,10 @@ function showAppDetails(appId) {
         document.querySelector('.details-content img').src = appDetail.icon;
         if(appDetail.live == false) {
             document.getElementById('live').hidden = true;
+            document.getElementById('git').hidden = false;
         } else {
             document.getElementById('live').hidden = false;
+            document.getElementById('git').hidden = true;
         }
 
         document.querySelector('.app-grid').classList.remove('view');
@@ -84,6 +100,7 @@ function showAppDetails(appId) {
         document.querySelector('.app-details').classList.add('view');
     }
 }
+
 
 function closeAppDetails() {
     document.querySelector('.app-details').classList.remove('view');
@@ -133,3 +150,22 @@ function showTime() {
 }
 
 showTime();
+
+function updateScrollPosition() {
+    const scrollY = window.pageYOffset;
+    const scrollX = window.pageXOffset;
+
+    console.log('X: ', scrollX, 'Y: ', scrollY);
+    const ele = document.getElementById('primary-navigation');
+    const logo = document.getElementById('nav-logo');
+
+    if(scrollY > 2310) {
+        ele.classList.add('navEdit');
+        logo.classList.add('navEdit');
+    } else {
+        ele.classList.remove('navEdit');
+        logo.classList.remove('navEdit');
+    }
+}
+
+window.addEventListener('scroll', updateScrollPosition);

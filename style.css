@@ -25,17 +25,23 @@
 
 .tracking-in-expand {
 	-webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
-	        animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
+	animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1s both;
 }
 
 .primary-navigation{
     inset: 0 0 0 30%;
     background: hsla(0, 0%, 24%, 0.512);
     backdrop-filter: blur(1em);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    transform: translateY(0px);
     /* height: 80px; */
 }
 
-
+.navEdit {
+    display: none;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    transform: translateY(0px);
+}
 
 
 @-webkit-keyframes tracking-in-expand {
